@@ -1,6 +1,7 @@
 var express = require("express"),
   app = express();
 
+var morgan = require("morgan");
 //Express 3
 //app.configure(function() {
 //    app.use(express.static(__dirname, '/'));
@@ -8,6 +9,7 @@ var express = require("express"),
 
 //Express 4
 app.use(express.static(__dirname + "/"));
+app.use(morgan("tiny"));
 
 app.get("/customers/:id", function (req, res) {
   var customerId = parseInt(req.params.id);

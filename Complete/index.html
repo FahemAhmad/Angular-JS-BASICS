@@ -1,26 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html ng-app="customersApp">
-<head>
+  <head>
     <title>Iterating Over Data</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link href="styles/styles.css" rel="stylesheet" type="text/css" />
     <link href="styles/animations.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-default">
-            <ul class="nav navbar-nav">
-                <li><a href="#/customers">Customers</a></li>
-                <li><a href="#/orders">Orders</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+          <li><a href="#/customers">Customers</a></li>
+          <li><a href="#/orders">Orders</a></li>
+          <li><a href="#/iframeTut">IFrame</a></li>
+        </ul>
+      </nav>
     </header>
+
     
     <main>
-        <div ng-view class="slide-animation"></div>
-    </main>    
-    
+      <div ng-view class="slide-animation"></div>
+    </main>
+
     <script src="scripts/angular.js"></script>
     <script src="scripts/angular-route.js"></script>
     <script src="scripts/angular-animate.js"></script>
@@ -30,5 +35,6 @@
     <script src="app/controllers/allOrdersController.js"></script>
     <script src="app/services/customersFactory.js"></script>
     <script src="app/services/values.js"></script>
-</body>
+    <script src="app/controllers/iFrameController.js"></script>
+  </body>
 </html>

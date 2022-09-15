@@ -1,0 +1,31 @@
+<div class="flex">
+  <div>
+    Enter a url to display: <input type="text" ng-model="url" />
+    <button type="button" ng-click="updateURL(url,youtube)" class="button">
+      Search
+    </button>
+  </div>
+
+  <div style="margin-top: 20px">
+    Is it a youtube Video ?
+
+    <label class="switch">
+      <input type="checkbox" ng-model="youtube" />
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <iframe
+    ng-src="{{link}}"
+    style="border: 0px #ffffff none"
+    name="myiFrame"
+    scrolling="no"
+    frameborder="10"
+    marginheight="0px"
+    marginwidth="0px"
+    height="400px"
+    width="710px"
+    allowfullscreen
+    class="center"
+  ></iframe>
+</div>
